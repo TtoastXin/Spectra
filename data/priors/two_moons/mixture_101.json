@@ -1,0 +1,30 @@
+{
+    "task": "two_moons",
+    "dist": "mixture",
+    "type": "mixture",
+    "mu": [
+        [
+            -0.03306454420089722,
+            -0.07312432676553726
+        ]
+    ],
+    "sigma": [
+        [
+            0.11547005921602249,
+            0.11547005921602249
+        ]
+    ],
+    "pi": [
+        1.0
+    ],
+    "round14_k": 1,
+    "round14_radius": 0.5,
+    "round14_base_points": 64,
+    "round14_centre": [
+        -0.03306454420089722,
+        -0.07312432676553726
+    ],
+    "round14_rule": "equal-weight components on every 64/K-th point of one fixed 64-point circle of radius R about the mild_0 centre; common width = shipped strong_0 width",
+    "round14_neighbour_separation_in_sigma": Infinity,
+    "generated_by": "scripts/round14_k_prepare.py"
+}

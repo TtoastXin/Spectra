@@ -1,0 +1,21 @@
+{
+    "task": "oup",
+    "dist": "uniform",
+    "type": "training",
+    "low_ori": [
+        0.0,
+        -2.0
+    ],
+    "high_ori": [
+        2.0,
+        2.0
+    ],
+    "low": [
+        -1.0,
+        -1.0
+    ],
+    "high": [
+        1.0,
+        1.0
+    ]
+}

@@ -1,0 +1,423 @@
+{
+  "round": "round16_anisotropy",
+  "source_prior": "priors/two_moons/mild_20.json",
+  "source_prior_sha256_16": "b783b1d6a5cbaefc",
+  "observation_sha256_16": {
+    "1000000": "97b4e9ceff173684",
+    "1000001": "7a8dd4262ee86cbc",
+    "1000002": "c8f9a038f1576345",
+    "1000003": "ce5c1dfcec574f4e",
+    "1000004": "826958ab9387cdc7",
+    "1000005": "7b0e3d9f36908e6c",
+    "1000008": "d9dc6166e46bd839",
+    "1000009": "f576f92d0a908e7d",
+    "1000010": "f8c99cf25dea9b0e",
+    "1000012": "f0209872d0eb8031"
+  },
+  "cells": {
+    "60": {
+      "cell": 60,
+      "gamma": 1.0,
+      "orientation": "iso",
+      "role": "exact_control",
+      "s": 0.1154700517654419,
+      "mu": [
+        -0.03306454420089722,
+        -0.07312432676553726
+      ],
+      "cov": [
+        [
+          0.01333333285471383,
+          0.0
+        ],
+        [
+          0.0,
+          0.01333333285471383
+        ]
+      ],
+      "per_axis_sd": [
+        0.1154700517654419,
+        0.1154700517654419
+      ],
+      "det_cov": 0.0001777777650145913,
+      "s4": 0.00017777776501459128,
+      "condition_number": 1.0,
+      "prior_mass_inside_training_box": 1.0
+    },
+    "61": {
+      "cell": 61,
+      "gamma": 1.0,
+      "orientation": "iso",
+      "role": "compiler_sanity",
+      "s": 0.1154700517654419,
+      "mu": [
+        -0.03306454420089722,
+        -0.07312432676553726
+      ],
+      "cov": [
+        [
+          0.01333333285471383,
+          0.0
+        ],
+        [
+          0.0,
+          0.01333333285471383
+        ]
+      ],
+      "per_axis_sd": [
+        0.1154700517654419,
+        0.1154700517654419
+      ],
+      "det_cov": 0.0001777777650145913,
+      "s4": 0.00017777776501459128,
+      "condition_number": 1.0,
+      "prior_mass_inside_training_box": 1.0,
+      "compiled": {
+        "rule": "tie_up",
+        "spread_factor": 6.0,
+        "c_ratio": 0.9,
+        "lambda": 0.011999999569242447,
+        "sqrt_lambda": 0.10954450953490297,
+        "sigma_c_axis_sd": [
+          0.03651483651163433,
+          0.03651483651163433
+        ],
+        "sigma_c_axes": [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "raw_criterion": [
+          "2.0000000000000004",
+          "2.0000000000000004"
+        ],
+        "node_orders": [
+          4,
+          4
+        ],
+        "num_atoms": 16,
+        "capacity": "medium",
+        "prior_json": "priors/two_moons/mixture_61.json",
+        "prior_json_sha256_16": "82261f78c878133d",
+        "min_prior_coefficient": 0.002104594050700907,
+        "eps_r_bound": {
+          "num_points": 200000,
+          "E_uniform_abs_diff": 2.476967685274588e-06,
+          "E_uniform_r": 0.25512588588562046,
+          "eps_r_over_Z_bound_uniform": 9.708805818258194e-06,
+          "max_abs_log_ratio_gap_heavy_decile": 5.731075920234474e-05,
+          "median_abs_log_ratio_gap_heavy_decile": 1.3277140453626934e-05,
+          "prior_mass_inside_box": 1.0,
+          "note": "TV(q, q~) <= E_{pi_train}|r - r~| / Z for every observation; measured under the training prior only"
+        }
+      }
+    },
+    "62": {
+      "cell": 62,
+      "gamma": 2.0,
+      "orientation": "plus",
+      "role": "anisotropic",
+      "s": 0.1154700517654419,
+      "mu": [
+        -0.03306454420089722,
+        -0.07312432676553726
+      ],
+      "cov": [
+        [
+          0.006666666427356915,
+          0.0
+        ],
+        [
+          0.0,
+          0.02666666570942766
+        ]
+      ],
+      "per_axis_sd": [
+        0.08164965662730564,
+        0.16329931325461128
+      ],
+      "det_cov": 0.0001777777650145913,
+      "s4": 0.00017777776501459128,
+      "condition_number": 4.0,
+      "prior_mass_inside_training_box": 1.0,
+      "compiled": {
+        "rule": "tie_up",
+        "spread_factor": 6.0,
+        "c_ratio": 0.9,
+        "lambda": 0.005999999784621224,
+        "sqrt_lambda": 0.07745966553388431,
+        "sigma_c_axis_sd": [
+          0.02581988851129477,
+          0.14375905510543133
+        ],
+        "sigma_c_axes": [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "raw_criterion": [
+          "2.0",
+          "11.135528725660045"
+        ],
+        "node_orders": [
+          4,
+          13
+        ],
+        "num_atoms": 52,
+        "capacity": "medium",
+        "prior_json": "priors/two_moons/mixture_62.json",
+        "prior_json_sha256_16": "69ee4a57b4c8b574",
+        "min_prior_coefficient": 1.2490287032889174e-09,
+        "eps_r_bound": {
+          "num_points": 200000,
+          "E_uniform_abs_diff": 0.0007608603063204072,
+          "E_uniform_r": 0.2536308242156508,
+          "eps_r_over_Z_bound_uniform": 0.0029998731765878825,
+          "max_abs_log_ratio_gap_heavy_decile": 0.009193612402052409,
+          "median_abs_log_ratio_gap_heavy_decile": 0.003581985693154932,
+          "prior_mass_inside_box": 1.0,
+          "note": "TV(q, q~) <= E_{pi_train}|r - r~| / Z for every observation; measured under the training prior only"
+        }
+      }
+    },
+    "63": {
+      "cell": 63,
+      "gamma": 2.0,
+      "orientation": "minus",
+      "role": "anisotropic",
+      "s": 0.1154700517654419,
+      "mu": [
+        -0.03306454420089722,
+        -0.07312432676553726
+      ],
+      "cov": [
+        [
+          0.02666666570942766,
+          0.0
+        ],
+        [
+          0.0,
+          0.006666666427356915
+        ]
+      ],
+      "per_axis_sd": [
+        0.16329931325461128,
+        0.08164965662730564
+      ],
+      "det_cov": 0.0001777777650145913,
+      "s4": 0.00017777776501459128,
+      "condition_number": 4.0,
+      "prior_mass_inside_training_box": 1.0,
+      "compiled": {
+        "rule": "tie_up",
+        "spread_factor": 6.0,
+        "c_ratio": 0.9,
+        "lambda": 0.005999999784621224,
+        "sqrt_lambda": 0.07745966553388431,
+        "sigma_c_axis_sd": [
+          0.02581988851129477,
+          0.14375905510543133
+        ],
+        "sigma_c_axes": [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        "raw_criterion": [
+          "2.0",
+          "11.135528725660045"
+        ],
+        "node_orders": [
+          4,
+          13
+        ],
+        "num_atoms": 52,
+        "capacity": "medium",
+        "prior_json": "priors/two_moons/mixture_63.json",
+        "prior_json_sha256_16": "7dd64d2e04266f45",
+        "min_prior_coefficient": 1.2490287032889174e-09,
+        "eps_r_bound": {
+          "num_points": 200000,
+          "E_uniform_abs_diff": 0.0007546521750199259,
+          "E_uniform_r": 0.2552827685089779,
+          "eps_r_over_Z_bound_uniform": 0.002956142239554982,
+          "max_abs_log_ratio_gap_heavy_decile": 0.009188486857430789,
+          "median_abs_log_ratio_gap_heavy_decile": 0.0035732051713971424,
+          "prior_mass_inside_box": 1.0,
+          "note": "TV(q, q~) <= E_{pi_train}|r - r~| / Z for every observation; measured under the training prior only"
+        }
+      }
+    },
+    "64": {
+      "cell": 64,
+      "gamma": 4.0,
+      "orientation": "plus",
+      "role": "anisotropic",
+      "s": 0.1154700517654419,
+      "mu": [
+        -0.03306454420089722,
+        -0.07312432676553726
+      ],
+      "cov": [
+        [
+          0.0033333332136784577,
+          0.0
+        ],
+        [
+          0.0,
+          0.05333333141885532
+        ]
+      ],
+      "per_axis_sd": [
+        0.05773502588272095,
+        0.2309401035308838
+      ],
+      "det_cov": 0.0001777777650145913,
+      "s4": 0.00017777776501459128,
+      "condition_number": 16.0,
+      "prior_mass_inside_training_box": 0.99997,
+      "compiled": {
+        "rule": "tie_up",
+        "spread_factor": 6.0,
+        "c_ratio": 0.9,
+        "lambda": 0.002999999892310612,
+        "sqrt_lambda": 0.054772254767451484,
+        "sigma_c_axis_sd": [
+          0.018257418255817164,
+          0.22435091157948236
+        ],
+        "sigma_c_axes": [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "raw_criterion": [
+          "2.0000000000000004",
+          "24.576411454889016"
+        ],
+        "node_orders": [
+          4,
+          26
+        ],
+        "num_atoms": 104,
+        "capacity": "medium",
+        "prior_json": "priors/two_moons/mixture_64.json",
+        "prior_json_sha256_16": "444e75a74af8bdcb",
+        "min_prior_coefficient": 1.1380396961379883e-19,
+        "eps_r_bound": {
+          "num_points": 200000,
+          "E_uniform_abs_diff": 0.0169042147780092,
+          "E_uniform_r": 0.252473431598788,
+          "eps_r_over_Z_bound_uniform": 0.06695443029772781,
+          "max_abs_log_ratio_gap_heavy_decile": 0.12795358546726443,
+          "median_abs_log_ratio_gap_heavy_decile": 0.07592204186963325,
+          "prior_mass_inside_box": 0.999975,
+          "note": "TV(q, q~) <= E_{pi_train}|r - r~| / Z for every observation; measured under the training prior only"
+        }
+      }
+    },
+    "65": {
+      "cell": 65,
+      "gamma": 4.0,
+      "orientation": "minus",
+      "role": "anisotropic",
+      "s": 0.1154700517654419,
+      "mu": [
+        -0.03306454420089722,
+        -0.07312432676553726
+      ],
+      "cov": [
+        [
+          0.05333333141885532,
+          0.0
+        ],
+        [
+          0.0,
+          0.0033333332136784577
+        ]
+      ],
+      "per_axis_sd": [
+        0.2309401035308838,
+        0.05773502588272095
+      ],
+      "det_cov": 0.0001777777650145913,
+      "s4": 0.00017777776501459128,
+      "condition_number": 16.0,
+      "prior_mass_inside_training_box": 0.999985,
+      "compiled": {
+        "rule": "tie_up",
+        "spread_factor": 6.0,
+        "c_ratio": 0.9,
+        "lambda": 0.002999999892310612,
+        "sqrt_lambda": 0.054772254767451484,
+        "sigma_c_axis_sd": [
+          0.018257418255817164,
+          0.22435091157948236
+        ],
+        "sigma_c_axes": [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        "raw_criterion": [
+          "2.0000000000000004",
+          "24.576411454889016"
+        ],
+        "node_orders": [
+          4,
+          26
+        ],
+        "num_atoms": 104,
+        "capacity": "medium",
+        "prior_json": "priors/two_moons/mixture_65.json",
+        "prior_json_sha256_16": "84f9647e56eef1c9",
+        "min_prior_coefficient": 1.1380396961379883e-19,
+        "eps_r_bound": {
+          "num_points": 200000,
+          "E_uniform_abs_diff": 0.01670428771051985,
+          "E_uniform_r": 0.2542890736509727,
+          "eps_r_over_Z_bound_uniform": 0.06569015125458165,
+          "max_abs_log_ratio_gap_heavy_decile": 0.12795269588389058,
+          "median_abs_log_ratio_gap_heavy_decile": 0.07520428204922247,
+          "prior_mass_inside_box": 0.999995,
+          "note": "TV(q, q~) <= E_{pi_train}|r - r~| / Z for every observation; measured under the training prior only"
+        }
+      }
+    }
+  },
+  "compiler_gate": {
+    "pass": true,
+    "fidelity": {
+      "cases": 800,
+      "orders_agree": 284,
+      "orders_differ": 516,
+      "bitwise_mismatch_where_orders_agree": 0
+    },
+    "self_test_tie_down_rejected": true
+  }
+}

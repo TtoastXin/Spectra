@@ -1,0 +1,31 @@
+{
+    "task": "slcp",
+    "dist": "gaussian",
+    "type": "mild",
+    "mu": [
+        0.12944139540195465,
+        -0.04845357686281204,
+        -0.052843403071165085,
+        -0.0380973294377327,
+        0.1120842844247818
+    ],
+    "sigma": [
+        0.2309401035308838,
+        0.2309401035308838,
+        0.2309401035308838,
+        0.2309401035308838,
+        0.2309401035308838
+    ],
+    "round14_lambda": 0.4,
+    "round14_sigma_over_training_sd": [
+        0.39999999282070736,
+        0.39999999282070736,
+        0.39999999282070736,
+        0.39999999282070736,
+        0.39999999282070736
+    ],
+    "round14_source_prior": "priors/slcp/mild_0.json",
+    "round14_source_prior_sha256": "343eb370cafd6a2679f65a96171aee07ab3845b932e8d895b399ecdfe20db3ee",
+    "round14_rule": "sigma = sigma_mild * lambda / 0.5 at the shipped mild_0 centre; observations are the mild_0 ones",
+    "generated_by": "scripts/round14_prepare_data.py"
+}

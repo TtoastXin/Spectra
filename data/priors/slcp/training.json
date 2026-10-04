@@ -1,0 +1,34 @@
+{
+    "task": "slcp",
+    "dist": "uniform",
+    "type": "training",
+    "low_ori": [
+        -3.0,
+        -3.0,
+        -3.0,
+        -3.0,
+        -3.0
+    ],
+    "high_ori": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+    ],
+    "low": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+    ],
+    "high": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "model_coordinate_note": "theta_phys = 3 * y; the diffusion, the atoms and every mu/sigma below are in the y (model) coordinate"
+}

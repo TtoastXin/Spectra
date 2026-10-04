@@ -1,0 +1,13 @@
+{
+    "task": "two_moons",
+    "dist": "uniform",
+    "type": "training",
+    "low": [
+        -1.0,
+        -1.0
+    ],
+    "high": [
+        1.0,
+        1.0
+    ]
+}

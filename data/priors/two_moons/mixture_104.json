@@ -1,0 +1,57 @@
+{
+    "task": "two_moons",
+    "dist": "mixture",
+    "type": "mixture",
+    "mu": [
+        [
+            0.4669354557991028,
+            -0.07312432676553726
+        ],
+        [
+            -0.03306454420089719,
+            0.42687567323446274
+        ],
+        [
+            -0.5330645442008972,
+            -0.0731243267655372
+        ],
+        [
+            -0.03306454420089731,
+            -0.5731243267655373
+        ]
+    ],
+    "sigma": [
+        [
+            0.11547005921602249,
+            0.11547005921602249
+        ],
+        [
+            0.11547005921602249,
+            0.11547005921602249
+        ],
+        [
+            0.11547005921602249,
+            0.11547005921602249
+        ],
+        [
+            0.11547005921602249,
+            0.11547005921602249
+        ]
+    ],
+    "pi": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+    ],
+    "round14_k": 4,
+    "round14_radius": 0.5,
+    "round14_base_points": 64,
+    "round14_centre": [
+        -0.03306454420089722,
+        -0.07312432676553726
+    ],
+    "round14_rule": "equal-weight components on every 64/K-th point of one fixed 64-point circle of radius R about the mild_0 centre; common width = shipped strong_0 width",
+    "round14_neighbour_separation_in_sigma": 6.123724071741275,
+    "generated_by": "scripts/round14_k_prepare.py"
+}

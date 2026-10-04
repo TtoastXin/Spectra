@@ -1,0 +1,27 @@
+# Python 3.10. Versions are the ones the paper's results were produced with.
+#
+# JAX: this pins the CPU build. For an NVIDIA GPU, see requirements-gpu.txt.
+# JAX must stay at 0.4.28: the vendored third_party/priorguide code uses JAX
+# internals that later releases changed.
+jax==0.4.28
+jaxlib==0.4.28
+dm-haiku==0.0.12
+optax==0.2.2
+chex==0.1.86
+jaxtyping==0.3.7
+numpy==1.26.4
+scipy==1.12.0
+
+# Evaluation (C2ST, MMTV). A CPU build of PyTorch is sufficient:
+#     pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+torch==2.6.0
+sbi==0.21.0
+scikit-learn==1.7.2
+
+# Required by sbi and arviz.
+matplotlib==3.10.9
+pandas==2.3.3
+
+# For the unit tests, which run on the CPU.  Nothing in spectra/ or scripts/
+# imports it.
+pytest==9.1.1

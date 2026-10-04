@@ -1,0 +1,22 @@
+{
+    "task": "two_moons",
+    "dist": "gaussian",
+    "type": "mild",
+    "mu": [
+        -0.03306454420089722,
+        -0.07312432676553726
+    ],
+    "sigma": [
+        0.1154700517654419,
+        0.1154700517654419
+    ],
+    "round14_lambda": 0.2,
+    "round14_sigma_over_training_sd": [
+        0.19999999641035368,
+        0.19999999641035368
+    ],
+    "round14_source_prior": "priors/two_moons/mild_0.json",
+    "round14_source_prior_sha256": "d098207165bb8c3f49715372942f9c15454b0d8b97613c046ea575119ec52e1b",
+    "round14_rule": "sigma = sigma_mild * lambda / 0.5 at the shipped mild_0 centre; observations are the mild_0 ones",
+    "generated_by": "scripts/round14_prepare_data.py"
+}
