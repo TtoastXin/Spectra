@@ -1,8 +1,8 @@
 # Spectra
 
-Code and trained models for *Spectra: Exact Component Transport for Test-Time
-Prior Adaptation in Simulation-Based Inference* by Xin Zhao, Nico Scherf, Robert
-Trampel, Kerrin J. Pine and Nikolaus Weiskopf.
+Code and trained models for [*Spectra: Exact Component Transport for Test-Time
+Prior Adaptation in Simulation-Based Inference*](https://arxiv.org/abs/2610.08021)
+by Xin Zhao, Nico Scherf, Robert Trampel, Kerrin J. Pine and Nikolaus Weiskopf.
 
 Spectra adapts a pretrained diffusion posterior sampler (a Simformer) to a new
 prior at test time, without retraining.  When the ratio of the new prior to the
@@ -41,6 +41,20 @@ after installing `requirements.txt`.
 The job scripts in `slurm/` rerun every experiment in the paper with the trained
 models in `checkpoints/`.  [`slurm/README.md`](slurm/README.md) lists the jobs
 in the order to run them and describes their output.
+
+## Citation
+
+```bibtex
+@misc{zhao2026spectra,
+  title         = {Spectra: Exact Component Transport for Test-Time Prior Adaptation in Simulation-Based Inference},
+  author        = {Zhao, Xin and Scherf, Nico and Trampel, Robert and Pine, Kerrin J. and Weiskopf, Nikolaus},
+  year          = {2026},
+  eprint        = {2610.08021},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2610.08021}
+}
+```
 
 ## License
 
